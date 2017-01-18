@@ -1,10 +1,15 @@
 import sys
 import networkx as nx
-import cPickle
 import collections
 import gc
 import logging
 import argparse
+
+if sys.version_info > (3,0,0):
+    import Pickle
+else:
+    import cPickle #py2 specific
+
 
 #adapted from http://courses.csail.mit.edu/6.006/fall11/rec/rec14.pdf
 class DFSResult:
