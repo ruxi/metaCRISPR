@@ -6,7 +6,7 @@ import logging
 import argparse
 
 if sys.version_info > (3,0,0):
-    import Pickle
+    import pickle
 else:
     import cPickle #py2 specific
 
